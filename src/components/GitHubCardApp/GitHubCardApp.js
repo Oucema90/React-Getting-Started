@@ -1,9 +1,8 @@
 import React from 'react';
-import TestData from '../../TestData';
 import './../../index.css';
 import CardList from './CardList';
 import Form from './Form';
-import { setState, useState } from 'react';
+import { useState } from 'react';
 
 function GitHubCardApp(props) {
 
