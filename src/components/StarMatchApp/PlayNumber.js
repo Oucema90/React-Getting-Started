@@ -1,9 +1,14 @@
 import React from 'react'
+import colors from './../../colors'
 import './../../index.css';
 
 const PlayNumber = (props) => {
     return (
-        <button className='number'>{props.number}</button>
+        <button style={{backgroundColor:colors[props.status]}} 
+        className='number' 
+        onClick={() => props.onClick(props.number,props.status)}>
+            {props.number}
+        </button>
     );
 }
 
