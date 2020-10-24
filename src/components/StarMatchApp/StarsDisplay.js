@@ -3,7 +3,7 @@ import utils from './../../utils'
 
 const StarsDisplay = (props) => {
 return (              
-    utils.range(1, props.stars).map(starId => <div key={starId} className='star'/>));
+    utils.range(1, props.count).map(starId => <div key={starId} className='star'/>));
 }
 
 export default StarsDisplay;
